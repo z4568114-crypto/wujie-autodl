@@ -1,1 +1,661 @@
-
+{
+  "schemaVersion": 1,
+  "purpose": "attribution evidence; not a redistribution clearance",
+  "components": [
+    {
+      "id": "comfyui",
+      "kind": "github",
+      "repository": "https://github.com/Comfy-Org/ComfyUI",
+      "requestedRevision": "73c9bad4d21e7addbe1d13bc92eee0f1431b017d",
+      "files": [
+        {
+          "path": "licenses/comfyui/LICENSE",
+          "url": "https://raw.githubusercontent.com/Comfy-Org/ComfyUI/73c9bad4d21e7addbe1d13bc92eee0f1431b017d/LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "bytes": 35149,
+          "role": "license-or-notice"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/Comfy-Org/ComfyUI/73c9bad4d21e7addbe1d13bc92eee0f1431b017d/README.md",
+          "sha256": "224e65e44969e84401213f00765c69709b762a81566ef6123a26f495892d4797",
+          "bytes": 28917,
+          "role": "readme",
+          "evidencePath": "licenses/comfyui/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-collected",
+      "revision": "73c9bad4d21e7addbe1d13bc92eee0f1431b017d"
+    },
+    {
+      "id": "kjnodes",
+      "kind": "github",
+      "repository": "https://github.com/kijai/ComfyUI-KJNodes",
+      "requestedRevision": "d3cfe21625e5170126ce06fbfcfe1d88108688c3",
+      "files": [
+        {
+          "path": "licenses/kjnodes/LICENSE",
+          "url": "https://raw.githubusercontent.com/kijai/ComfyUI-KJNodes/d3cfe21625e5170126ce06fbfcfe1d88108688c3/LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "bytes": 35149,
+          "role": "license-or-notice"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/kijai/ComfyUI-KJNodes/d3cfe21625e5170126ce06fbfcfe1d88108688c3/README.md",
+          "sha256": "9f9493fec728b782ec9bac709b2522fcc01b456db78a97dd83f7b91eea0af136",
+          "bytes": 4304,
+          "role": "readme",
+          "evidencePath": "licenses/kjnodes/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-collected",
+      "revision": "d3cfe21625e5170126ce06fbfcfe1d88108688c3"
+    },
+    {
+      "id": "h3-upscaler-node",
+      "kind": "github",
+      "repository": "https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler",
+      "requestedRevision": "40316cf008b2fd8663263270669eb4da23f89d2c",
+      "files": [
+        {
+          "path": "licenses/h3-upscaler-node/LICENSE",
+          "url": "https://raw.githubusercontent.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler/40316cf008b2fd8663263270669eb4da23f89d2c/LICENSE",
+          "sha256": "86805fe49f63c8957e4427f7e7f26fba687c6cea05fa9249bf36f9d3316a0734",
+          "bytes": 1069,
+          "role": "license-or-notice"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler/40316cf008b2fd8663263270669eb4da23f89d2c/README.md",
+          "sha256": "15417cee20f551200ed14567c0b8d87a50ed7a11d8bab921b6e6eedde8c21a66",
+          "bytes": 21883,
+          "role": "readme",
+          "evidencePath": "licenses/h3-upscaler-node/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-collected",
+      "revision": "40316cf008b2fd8663263270669eb4da23f89d2c"
+    },
+    {
+      "id": "indextts-code",
+      "kind": "github",
+      "repository": "https://github.com/index-tts/index-tts",
+      "requestedRevision": "d9e41aac89fd00b3d71497fddb287b7f24613712",
+      "files": [
+        {
+          "path": "licenses/indextts-code/LICENSE",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/LICENSE",
+          "sha256": "53875532237e0a97b17a41721556ff57e93193fc566e48c3a0febe6e35bb5343",
+          "bytes": 10554,
+          "role": "license-or-notice"
+        },
+        {
+          "path": "licenses/indextts-code/LICENSE_ZH.txt",
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/LICENSE_ZH.txt",
+          "sha256": "366175ecf329274358801b8365922677c52f25e643dcf00f0bc15857b5b2777f",
+          "bytes": 7336,
+          "role": "license-or-notice"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/index-tts/index-tts/d9e41aac89fd00b3d71497fddb287b7f24613712/README.md",
+          "sha256": "70a238e697b1c59fa98b56c2275d70c5dd8aa7dc9bcf7c9cea649206ab7843ce",
+          "bytes": 25221,
+          "role": "readme",
+          "evidencePath": "licenses/indextts-code/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-collected",
+      "revision": "d9e41aac89fd00b3d71497fddb287b7f24613712"
+    },
+    {
+      "id": "dwpose-code",
+      "kind": "github",
+      "repository": "https://github.com/IDEA-Research/DWPose",
+      "requestedRevision": "3dca5db79d9f9ffdd378753ddf6ec66535aace88",
+      "files": [
+        {
+          "path": "licenses/dwpose-code/LICENSE",
+          "url": "https://raw.githubusercontent.com/IDEA-Research/DWPose/3dca5db79d9f9ffdd378753ddf6ec66535aace88/LICENSE",
+          "sha256": "ec5aa54eef312195c4494873a37158b19b0d523e25cec570189e6aa86289cf42",
+          "bytes": 11996,
+          "role": "license-or-notice"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/IDEA-Research/DWPose/3dca5db79d9f9ffdd378753ddf6ec66535aace88/README.md",
+          "sha256": "46868c8240f5dda03c7d7e8d6d9c0c6cf29739247d8387d371aaa804298a8be6",
+          "bytes": 8625,
+          "role": "readme",
+          "evidencePath": "licenses/dwpose-code/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-collected",
+      "revision": "3dca5db79d9f9ffdd378753ddf6ec66535aace88"
+    },
+    {
+      "id": "sam2-code",
+      "kind": "github",
+      "repository": "https://github.com/facebookresearch/sam2",
+      "requestedRevision": "2b90b9f5ceec907a1c18123530e92e794ad901a4",
+      "files": [
+        {
+          "path": "licenses/sam2-code/LICENSE",
+          "url": "https://raw.githubusercontent.com/facebookresearch/sam2/2b90b9f5ceec907a1c18123530e92e794ad901a4/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "bytes": 11357,
+          "role": "license-or-notice"
+        },
+        {
+          "path": "licenses/sam2-code/LICENSE_cctorch",
+          "url": "https://raw.githubusercontent.com/facebookresearch/sam2/2b90b9f5ceec907a1c18123530e92e794ad901a4/LICENSE_cctorch",
+          "sha256": "687d4f65ffe399358b170e22572564a16689e496f85a79dc5385fccf6bbc9558",
+          "bytes": 1566,
+          "role": "license-or-notice"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/facebookresearch/sam2/2b90b9f5ceec907a1c18123530e92e794ad901a4/README.md",
+          "sha256": "eea69ee1042fb30933c5ca5019fbf0f6f9366cec5e792109281b5023a4f1589c",
+          "bytes": 16249,
+          "role": "readme",
+          "evidencePath": "licenses/sam2-code/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-collected",
+      "revision": "2b90b9f5ceec907a1c18123530e92e794ad901a4"
+    },
+    {
+      "id": "rife-code",
+      "kind": "github",
+      "repository": "https://github.com/hzwer/Practical-RIFE",
+      "requestedRevision": "bbfd2ea90910789a860ea3e2b32a240cd577b75e",
+      "files": [
+        {
+          "path": "licenses/rife-code/LICENSE",
+          "url": "https://raw.githubusercontent.com/hzwer/Practical-RIFE/bbfd2ea90910789a860ea3e2b32a240cd577b75e/LICENSE",
+          "sha256": "7932fb49341512b959b1744a6d9cbb39e5a1ec89da438a34d0454d5d8df9fecd",
+          "bytes": 1062,
+          "role": "license-or-notice"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/hzwer/Practical-RIFE/bbfd2ea90910789a860ea3e2b32a240cd577b75e/README.md",
+          "sha256": "b695ac5d4a69c2f551512678883f8234d784c286d805ca546f4873cb465959b4",
+          "bytes": 9583,
+          "role": "readme",
+          "evidencePath": "licenses/rife-code/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-collected",
+      "revision": "bbfd2ea90910789a860ea3e2b32a240cd577b75e"
+    },
+    {
+      "id": "qwen21-model",
+      "kind": "huggingface",
+      "repository": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "requestedRevision": "main",
+      "files": [
+        {
+          "path": "licenses/qwen21-model/LICENSE",
+          "url": "https://huggingface.co/Qwen/Qwen-Image-2.1/resolve/d26bb61231c349cf6b7896fa83353113880e1ba3/LICENSE",
+          "sha256": "8dc973f024ff95966bea25866efa443fd16776dcb1001e681e3d467ea572b28d",
+          "bytes": 7831,
+          "role": "license-or-notice"
+        },
+        {
+          "url": "https://huggingface.co/Qwen/Qwen-Image-2.1/resolve/d26bb61231c349cf6b7896fa83353113880e1ba3/README.md",
+          "sha256": "d4aee8d372df2a890b6283e7d1885e3f68b57190c7d3f4b9466a61beffc16016",
+          "bytes": 5707,
+          "role": "readme",
+          "evidencePath": "licenses/qwen21-model/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-collected",
+      "revision": "d26bb61231c349cf6b7896fa83353113880e1ba3",
+      "declaredLicense": "other",
+      "licenseLink": "LICENSE"
+    },
+    {
+      "id": "qwen21-comfy-repack",
+      "kind": "huggingface",
+      "repository": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1",
+      "requestedRevision": "9a44dbdb47cefd046be9c0a13476192f34c8db8e",
+      "files": [
+        {
+          "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/9a44dbdb47cefd046be9c0a13476192f34c8db8e/README.md",
+          "sha256": "2bc1a021663ae28110cd0b18a9486aa87161efb6a4550c3ecca3e1b84619052e",
+          "bytes": 4654,
+          "role": "readme",
+          "evidencePath": "licenses/qwen21-comfy-repack/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-missing",
+      "revision": "9a44dbdb47cefd046be9c0a13476192f34c8db8e",
+      "declaredLicense": "other",
+      "licenseLink": "https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE"
+    },
+    {
+      "id": "h3-model",
+      "kind": "huggingface",
+      "repository": "https://huggingface.co/MiniMaxAI/MiniMax-H3",
+      "requestedRevision": "main",
+      "files": [
+        {
+          "path": "licenses/h3-model/LICENSE",
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/LICENSE",
+          "sha256": "59b99642b95ea21630e311198ddbfffbfe05aadba0c2f5d884cbdf4efcc90f44",
+          "bytes": 17604,
+          "role": "license-or-notice"
+        },
+        {
+          "url": "https://huggingface.co/MiniMaxAI/MiniMax-H3/resolve/42ed227ee7df40d41602854ae760620d6eb651fe/README.md",
+          "sha256": "f0116a90332496bdfcc827320c603a26b849c73bf804f2674d03682fbbd2334a",
+          "bytes": 38406,
+          "role": "readme",
+          "evidencePath": "licenses/h3-model/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-collected",
+      "revision": "42ed227ee7df40d41602854ae760620d6eb651fe",
+      "declaredLicense": "other",
+      "licenseLink": "LICENSE"
+    },
+    {
+      "id": "h3-comfy-repack",
+      "kind": "huggingface",
+      "repository": "https://huggingface.co/Comfy-Org/MiniMax-H3",
+      "requestedRevision": "e5eb578a89295337b8ff433a035929ce0279e0b6",
+      "files": [
+        {
+          "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/e5eb578a89295337b8ff433a035929ce0279e0b6/README.md",
+          "sha256": "cfe1e532856bc48fc2a6de64b5db0aa68282476f5488975bf3d1519438515fe9",
+          "bytes": 8293,
+          "role": "readme",
+          "evidencePath": "licenses/h3-comfy-repack/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-missing",
+      "revision": "e5eb578a89295337b8ff433a035929ce0279e0b6",
+      "declaredLicense": "other",
+      "licenseLink": "https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE"
+    },
+    {
+      "id": "h3-hybrid",
+      "kind": "huggingface",
+      "repository": "https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models",
+      "requestedRevision": "57563a16aabbb8b89e71c96feb32ff5df5d80c48",
+      "files": [
+        {
+          "url": "https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models/resolve/57563a16aabbb8b89e71c96feb32ff5df5d80c48/README.md",
+          "sha256": "5fb6d9c89790e6431122d2d33991a45c31f2c98217bfdabf8afd0648a557d9c4",
+          "bytes": 6713,
+          "role": "readme",
+          "evidencePath": "licenses/h3-hybrid/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-missing",
+      "revision": "57563a16aabbb8b89e71c96feb32ff5df5d80c48",
+      "declaredLicense": "other",
+      "licenseLink": null
+    },
+    {
+      "id": "h3-upscaler-model",
+      "kind": "huggingface",
+      "repository": "https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler",
+      "requestedRevision": "3f941d5d182014dd5c0a5e16330420ee2d4aa0c6",
+      "files": [
+        {
+          "url": "https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/resolve/3f941d5d182014dd5c0a5e16330420ee2d4aa0c6/README.md",
+          "sha256": "9244f27ea73066ebf125e43789655d7b2020d3c839c616c1348fe7a0df81853e",
+          "bytes": 6251,
+          "role": "readme",
+          "evidencePath": "licenses/h3-upscaler-model/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-missing",
+      "revision": "3f941d5d182014dd5c0a5e16330420ee2d4aa0c6",
+      "declaredLicense": "apache-2.0",
+      "licenseLink": null
+    },
+    {
+      "id": "h3-turbo-lora",
+      "kind": "huggingface",
+      "repository": "https://huggingface.co/t8star/minimax-h3-4step-turbo-loras-comfyui-exp",
+      "requestedRevision": "5d9ce9b1825d9e72a2f858daa0b1fd55a9dbc4fa",
+      "files": [
+        {
+          "url": "https://huggingface.co/t8star/minimax-h3-4step-turbo-loras-comfyui-exp/resolve/5d9ce9b1825d9e72a2f858daa0b1fd55a9dbc4fa/README.md",
+          "sha256": "c4e20ac038e8d0041d7f38734636037754c8f1f3ee8ded50c47094bfaf331e3c",
+          "bytes": 378,
+          "role": "readme",
+          "evidencePath": "licenses/h3-turbo-lora/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-missing",
+      "revision": "5d9ce9b1825d9e72a2f858daa0b1fd55a9dbc4fa",
+      "declaredLicense": null,
+      "licenseLink": null
+    },
+    {
+      "id": "h3-turbo-lightx2v",
+      "kind": "huggingface",
+      "repository": "https://huggingface.co/lightx2v/Minimax-h3-Turbo",
+      "requestedRevision": "62487ee643501626a71502d679f735a23ee6af45",
+      "files": [
+        {
+          "url": "https://huggingface.co/lightx2v/Minimax-h3-Turbo/resolve/62487ee643501626a71502d679f735a23ee6af45/README.md",
+          "sha256": "8fd20f4fedaa8fa479a3b0ae9729e5ec15b870363c531c55f7a909f5934e7381",
+          "bytes": 255,
+          "role": "readme",
+          "evidencePath": "licenses/h3-turbo-lightx2v/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-missing",
+      "revision": "62487ee643501626a71502d679f735a23ee6af45",
+      "declaredLicense": "apache-2.0",
+      "licenseLink": null
+    },
+    {
+      "id": "indextts-model",
+      "kind": "huggingface",
+      "repository": "https://huggingface.co/IndexTeam/IndexTTS-2.5",
+      "requestedRevision": "c39ce5ba981572cb187443877ff559dfb246ce63",
+      "files": [
+        {
+          "path": "licenses/indextts-model/LICENSE",
+          "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/LICENSE",
+          "sha256": "cc7da9ea0f8a97ef15ab3bf0389e636ce79ffca1aef5489520796ac87d87a87b",
+          "bytes": 10553,
+          "role": "license-or-notice"
+        },
+        {
+          "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/README.md",
+          "sha256": "d21e2ed55013ce0c456b9aa6d4fab7222365bfad10dd839155da0ce36fa93001",
+          "bytes": 4272,
+          "role": "readme",
+          "evidencePath": "licenses/indextts-model/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-collected",
+      "revision": "c39ce5ba981572cb187443877ff559dfb246ce63",
+      "declaredLicense": "other",
+      "licenseLink": "LICENSE"
+    },
+    {
+      "id": "bigvgan",
+      "kind": "huggingface",
+      "repository": "https://huggingface.co/nvidia/bigvgan_v2_22khz_80band_256x",
+      "requestedRevision": "633ff708ed5b74903e86ff1298cf4a98e921c513",
+      "files": [
+        {
+          "path": "licenses/bigvgan/LICENSE",
+          "url": "https://huggingface.co/nvidia/bigvgan_v2_22khz_80band_256x/resolve/633ff708ed5b74903e86ff1298cf4a98e921c513/LICENSE",
+          "sha256": "90459cd52fc41bd723df7c0c76fac1e4dd60e6bfd644a7e2a93f325bed4f6d95",
+          "bytes": 1076,
+          "role": "license-or-notice"
+        },
+        {
+          "url": "https://huggingface.co/nvidia/bigvgan_v2_22khz_80band_256x/resolve/633ff708ed5b74903e86ff1298cf4a98e921c513/README.md",
+          "sha256": "e70574f9ca1a0fac3a1faea840898c4c814552e46f5c160639db1397f9c7ddf4",
+          "bytes": 8038,
+          "role": "readme",
+          "evidencePath": "licenses/bigvgan/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-collected",
+      "revision": "633ff708ed5b74903e86ff1298cf4a98e921c513",
+      "declaredLicense": "mit",
+      "licenseLink": "https://huggingface.co/nvidia/BigVGAN/blob/main/LICENSE"
+    },
+    {
+      "id": "dwpose-model",
+      "kind": "huggingface",
+      "repository": "https://huggingface.co/yzd-v/DWPose",
+      "requestedRevision": "1a7144101628d69ee7a3768d1ee3a094070dc388",
+      "files": [
+        {
+          "url": "https://huggingface.co/yzd-v/DWPose/resolve/1a7144101628d69ee7a3768d1ee3a094070dc388/README.md",
+          "sha256": "98b45ea81164d1e1a1dd82255207053b15cd6c69d922a1c5cf3387ce604d4b74",
+          "bytes": 28,
+          "role": "readme",
+          "evidencePath": "licenses/dwpose-model/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-missing",
+      "revision": "1a7144101628d69ee7a3768d1ee3a094070dc388",
+      "declaredLicense": "apache-2.0",
+      "licenseLink": null
+    },
+    {
+      "id": "sam2-model",
+      "kind": "huggingface",
+      "repository": "https://huggingface.co/facebook/sam2.1-hiera-tiny",
+      "requestedRevision": "de431c4043854a71d8101e17995dfe596bf101a5",
+      "files": [
+        {
+          "url": "https://huggingface.co/facebook/sam2.1-hiera-tiny/resolve/de431c4043854a71d8101e17995dfe596bf101a5/README.md",
+          "sha256": "dfa401b1b9358b9650ae487dd2f2bb336fd745c3609e3244adf2e97a22343857",
+          "bytes": 19965,
+          "role": "readme",
+          "evidencePath": "licenses/sam2-model/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-missing",
+      "revision": "de431c4043854a71d8101e17995dfe596bf101a5",
+      "declaredLicense": "apache-2.0",
+      "licenseLink": null
+    },
+    {
+      "id": "h3-turbo-original",
+      "kind": "huggingface",
+      "repository": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora",
+      "requestedRevision": "main",
+      "files": [
+        {
+          "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora/resolve/43a74557ac3f6539db8e0f2a959d03feb7a81480/README.md",
+          "sha256": "0445dc4967a9ecf6ac5c8e37b4c86b837021d99058bc5af68f188b1d66b62b65",
+          "bytes": 7448,
+          "role": "readme",
+          "evidencePath": "licenses/h3-turbo-original/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-missing",
+      "revision": "43a74557ac3f6539db8e0f2a959d03feb7a81480",
+      "declaredLicense": "apache-2.0",
+      "licenseLink": null
+    },
+    {
+      "id": "w2v-bert",
+      "kind": "huggingface",
+      "repository": "https://huggingface.co/facebook/w2v-bert-2.0",
+      "requestedRevision": "da985ba0987f70aaeb84a80f2851cfac8c697a7b",
+      "files": [
+        {
+          "url": "https://huggingface.co/facebook/w2v-bert-2.0/resolve/da985ba0987f70aaeb84a80f2851cfac8c697a7b/README.md",
+          "sha256": "478afeacb3b4ce0d86b361f099416d28a7e7673ade31775c0f85f396979b7fc2",
+          "bytes": 4792,
+          "role": "readme",
+          "evidencePath": "licenses/w2v-bert/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-missing",
+      "revision": "da985ba0987f70aaeb84a80f2851cfac8c697a7b",
+      "declaredLicense": "mit",
+      "licenseLink": null
+    },
+    {
+      "id": "campplus",
+      "kind": "huggingface",
+      "repository": "https://huggingface.co/funasr/campplus",
+      "requestedRevision": "e4b6ede7ce16997aff4ae69fbca1f0175e2afede",
+      "files": [
+        {
+          "url": "https://huggingface.co/funasr/campplus/resolve/e4b6ede7ce16997aff4ae69fbca1f0175e2afede/README.md",
+          "sha256": "c6025ccc42e290640f44e06f0742c584b99afe738bb819d74889330c692446f9",
+          "bytes": 2020,
+          "role": "readme",
+          "evidencePath": "licenses/campplus/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-missing",
+      "revision": "e4b6ede7ce16997aff4ae69fbca1f0175e2afede",
+      "declaredLicense": "apache-2.0",
+      "licenseLink": null
+    },
+    {
+      "id": "real-esrgan-code",
+      "kind": "github",
+      "repository": "https://github.com/xinntao/Real-ESRGAN",
+      "requestedRevision": "a4abfb2979a7bbff3f69f58f58ae324608821e27",
+      "files": [
+        {
+          "path": "licenses/real-esrgan-code/LICENSE",
+          "url": "https://raw.githubusercontent.com/xinntao/Real-ESRGAN/a4abfb2979a7bbff3f69f58f58ae324608821e27/LICENSE",
+          "sha256": "4a699ec4863d96a91fc265948a0c90033f7e8735d515524dcf3444736406e0c2",
+          "bytes": 1519,
+          "role": "license-or-notice"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/xinntao/Real-ESRGAN/a4abfb2979a7bbff3f69f58f58ae324608821e27/README.md",
+          "sha256": "d0a13607913ea94e65a91ac864b969683a41a45b0aec16e0ae64271649d0364d",
+          "bytes": 16548,
+          "role": "readme",
+          "evidencePath": "licenses/real-esrgan-code/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-collected",
+      "revision": "a4abfb2979a7bbff3f69f58f58ae324608821e27"
+    },
+    {
+      "id": "base-comfyui",
+      "kind": "github",
+      "repository": "https://github.com/comfyanonymous/ComfyUI",
+      "requestedRevision": "af4b7b5edb339a15aa443e32aefbceac1810baa0",
+      "files": [
+        {
+          "path": "licenses/base-comfyui/LICENSE",
+          "url": "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/af4b7b5edb339a15aa443e32aefbceac1810baa0/LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "bytes": 35149,
+          "role": "license-or-notice"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/af4b7b5edb339a15aa443e32aefbceac1810baa0/README.md",
+          "sha256": "2d37575057c66c4bacd48c3b9eaf4e520821075fe35a9ae8a87d8ff2507807b9",
+          "bytes": 26876,
+          "role": "readme",
+          "evidencePath": "licenses/base-comfyui/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-collected",
+      "revision": "af4b7b5edb339a15aa443e32aefbceac1810baa0"
+    },
+    {
+      "id": "base-translation",
+      "kind": "github",
+      "repository": "https://github.com/AIGODLIKE/AIGODLIKE-ComfyUI-Translation",
+      "requestedRevision": "94903b39c7c68e14151d7caf7c4f12702a3714fb",
+      "files": [
+        {
+          "url": "https://raw.githubusercontent.com/AIGODLIKE/AIGODLIKE-ComfyUI-Translation/94903b39c7c68e14151d7caf7c4f12702a3714fb/readme.md",
+          "sha256": "cb79ec388919ea6041ca3fa48033fadf421589d18864608eef63315e3a7daa39",
+          "bytes": 21818,
+          "role": "readme",
+          "evidencePath": "licenses/base-translation/readme.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-missing",
+      "revision": "94903b39c7c68e14151d7caf7c4f12702a3714fb"
+    },
+    {
+      "id": "base-manager",
+      "kind": "github",
+      "repository": "https://github.com/ltdrdata/ComfyUI-Manager",
+      "requestedRevision": "d2a795c866fe39778c31c6aeb5180ba38d771fa0",
+      "files": [
+        {
+          "path": "licenses/base-manager/LICENSE.txt",
+          "url": "https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/d2a795c866fe39778c31c6aeb5180ba38d771fa0/LICENSE.txt",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "bytes": 35149,
+          "role": "license-or-notice"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/d2a795c866fe39778c31c6aeb5180ba38d771fa0/README.md",
+          "sha256": "0b90d3d3fe42d0885b065c952bd5ea6cde7bc96fa17cdf64598dcf818551186a",
+          "bytes": 22548,
+          "role": "readme",
+          "evidencePath": "licenses/base-manager/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-collected",
+      "revision": "d2a795c866fe39778c31c6aeb5180ba38d771fa0"
+    },
+    {
+      "id": "base-kjnodes",
+      "kind": "github",
+      "repository": "https://github.com/kijai/ComfyUI-KJNodes",
+      "requestedRevision": "6c996e1877db08c7de020ee14421dd28d7574ec2",
+      "files": [
+        {
+          "path": "licenses/base-kjnodes/LICENSE",
+          "url": "https://raw.githubusercontent.com/kijai/ComfyUI-KJNodes/6c996e1877db08c7de020ee14421dd28d7574ec2/LICENSE",
+          "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+          "bytes": 35149,
+          "role": "license-or-notice"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/kijai/ComfyUI-KJNodes/6c996e1877db08c7de020ee14421dd28d7574ec2/README.md",
+          "sha256": "399106cb1f973795bd327eb8c3e7fa7809a7b8bfec9cc66b6d2f6d74210f286e",
+          "bytes": 2873,
+          "role": "readme",
+          "evidencePath": "licenses/base-kjnodes/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-collected",
+      "revision": "6c996e1877db08c7de020ee14421dd28d7574ec2"
+    },
+    {
+      "id": "h3-comfy-encoders",
+      "kind": "huggingface",
+      "repository": "https://huggingface.co/Comfy-Org/MiniMax-H3",
+      "requestedRevision": "3f57e8291d2ef846f9a074b1b76d2767db434abe",
+      "files": [
+        {
+          "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/3f57e8291d2ef846f9a074b1b76d2767db434abe/README.md",
+          "sha256": "d38cf61ecccf4039d17f68250f7a886147401700beb9ea3cce3dd5a0d2d4558d",
+          "bytes": 1064,
+          "role": "readme",
+          "evidencePath": "licenses/h3-comfy-encoders/README.md",
+          "includedInThisRepository": false
+        }
+      ],
+      "status": "license-text-missing",
+      "revision": "3f57e8291d2ef846f9a074b1b76d2767db434abe",
+      "declaredLicense": null,
+      "licenseLink": null
+    }
+  ]
+}
