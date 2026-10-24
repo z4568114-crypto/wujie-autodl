@@ -1,1 +1,483 @@
-
+{
+  "schemaVersion": 1,
+  "models": [
+    {
+      "id": "dwpose-detector",
+      "name": "DWPose 人物检测（动作预处理）",
+      "installedPath": "/root/wujie-image/ComfyUI/models/video_preprocessing/yolox_l.onnx",
+      "sourceUrl": "https://huggingface.co/yzd-v/DWPose/resolve/1a7144101628d69ee7a3768d1ee3a094070dc388/yolox_l.onnx",
+      "sourceRevision": "1a7144101628d69ee7a3768d1ee3a094070dc388",
+      "sourceSha256": "7860ae79de6c89a3c1eb72ae9a2756c0ccfbe04b7791bb5880afabd97855a411",
+      "sourceBytes": 216746733,
+      "licenseEvidenceIds": [
+        "dwpose-model"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "dwpose-wholebody",
+      "name": "DWPose 全身动作估计",
+      "installedPath": "/root/wujie-image/ComfyUI/models/video_preprocessing/dw-ll_ucoco_384.onnx",
+      "sourceUrl": "https://huggingface.co/yzd-v/DWPose/resolve/1a7144101628d69ee7a3768d1ee3a094070dc388/dw-ll_ucoco_384.onnx",
+      "sourceRevision": "1a7144101628d69ee7a3768d1ee3a094070dc388",
+      "sourceSha256": "724f4ff2439ed61afb86fb8a1951ec39c6220682803b4a8bd4f598cd913b1843",
+      "sourceBytes": 134399116,
+      "licenseEvidenceIds": [
+        "dwpose-model"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "sam2-tracking-tiny",
+      "name": "SAM2.1 Tiny 逐帧跟踪（V1 内存优先）",
+      "installedPath": "/root/wujie-image/ComfyUI/models/video_preprocessing/sam2.1_hiera_tiny.pt",
+      "sourceUrl": "https://huggingface.co/facebook/sam2.1-hiera-tiny/resolve/de431c4043854a71d8101e17995dfe596bf101a5/sam2.1_hiera_tiny.pt",
+      "sourceRevision": "de431c4043854a71d8101e17995dfe596bf101a5",
+      "sourceSha256": "7402e0d864fa82708a20fbd15bc84245c2f26dff0eb43a4b5b93452deb34be69",
+      "sourceBytes": 156008466,
+      "licenseEvidenceIds": [
+        "sam2-model"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "h3-hybrid",
+      "name": "H3 多参混合模型",
+      "installedPath": "/root/wujie-image/ComfyUI/models/diffusion_models/minimax_h3_hybrid_fl2va_ref2va_b25-49-int8.safetensors",
+      "sourceUrl": "https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models/resolve/57563a16aabbb8b89e71c96feb32ff5df5d80c48/minimax_h3_hybrid_fl2va_ref2va_b25-49.safetensors",
+      "sourceRevision": "57563a16aabbb8b89e71c96feb32ff5df5d80c48",
+      "sourceSha256": "a629cfea8d89a071b140c6e1935dc9a23e72de6badc18975a2bb9e6d1423d76d",
+      "sourceBytes": 20970379632,
+      "licenseEvidenceIds": [
+        "h3-hybrid"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "h3-text-encoder",
+      "name": "Qwen3-VL 编码器",
+      "installedPath": "/root/wujie-image/ComfyUI/models/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "sourceUrl": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/3f57e8291d2ef846f9a074b1b76d2767db434abe/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+      "sourceRevision": "3f57e8291d2ef846f9a074b1b76d2767db434abe",
+      "sourceSha256": "35a88d51044231fe332301d7a62aa81e3f2cba62febeb446e2c1e3e0ef76f2c6",
+      "sourceBytes": 15687142551,
+      "licenseEvidenceIds": [
+        "h3-comfy-encoders"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "h3-video-vae",
+      "name": "H3 视频 VAE",
+      "installedPath": "/root/wujie-image/ComfyUI/models/vae/minimax_h3_video_vae_fp16.safetensors",
+      "sourceUrl": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/3f57e8291d2ef846f9a074b1b76d2767db434abe/vae/minimax_h3_video_vae_fp16.safetensors",
+      "sourceRevision": "3f57e8291d2ef846f9a074b1b76d2767db434abe",
+      "sourceSha256": "7c1f131492e7eddacaac9069a61b81bdd39de5cc96561e677c5eab1cdce5e522",
+      "sourceBytes": 5207808496,
+      "licenseEvidenceIds": [
+        "h3-comfy-encoders"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "h3-audio-vae",
+      "name": "H3 音频 VAE",
+      "installedPath": "/root/wujie-image/ComfyUI/models/vae/minimax_h3_audio_vae_fp32.safetensors",
+      "sourceUrl": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/3f57e8291d2ef846f9a074b1b76d2767db434abe/vae/minimax_h3_audio_vae_fp32.safetensors",
+      "sourceRevision": "3f57e8291d2ef846f9a074b1b76d2767db434abe",
+      "sourceSha256": "8e505d95dd1561d47abd43d4238fd40d9bb1ae9e147ed0a4cba778d76ae4db48",
+      "sourceBytes": 605254808,
+      "licenseEvidenceIds": [
+        "h3-comfy-encoders"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "h3-latent-upscaler",
+      "name": "H3 3D 潜空间超分",
+      "installedPath": "/root/wujie-image/ComfyUI/models/latent_upscale_models/minimax_h3_latent_upscaler_3d_conv_v1_fp16.safetensors",
+      "sourceUrl": "https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/resolve/3f941d5d182014dd5c0a5e16330420ee2d4aa0c6/minimax_h3_latent_upscaler_3d_conv_v1/minimax_h3_latent_upscaler_3d_conv_v1_fp16.safetensors",
+      "sourceRevision": "3f941d5d182014dd5c0a5e16330420ee2d4aa0c6",
+      "sourceSha256": "043e5a48e161610ef6c3ea974645220354d06fa618abca15f76d084812eb55c2",
+      "sourceBytes": 690592672,
+      "licenseEvidenceIds": [
+        "h3-upscaler-model"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "h3-turbo-lora",
+      "name": "H3 Turbo 兼容 LoRA",
+      "installedPath": "/root/wujie-image/ComfyUI/models/loras/minimax_h3_turbo_pruned_compatible_comfyui.safetensors",
+      "sourceUrl": "https://huggingface.co/t8star/minimax-h3-4step-turbo-loras-comfyui-exp/resolve/5d9ce9b1825d9e72a2f858daa0b1fd55a9dbc4fa/minimax_h3_turbo_4%E6%AD%A5%E5%8A%A0%E9%80%9F_comfyui.safetensors",
+      "sourceRevision": "5d9ce9b1825d9e72a2f858daa0b1fd55a9dbc4fa+pruned-416",
+      "sourceSha256": "038c189fe2102125e943644f0029fffe874a4340e46aeef6bb3830dfbed04f06",
+      "sourceBytes": 620285576,
+      "licenseEvidenceIds": [
+        "h3-turbo-lora"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "modification": {
+        "kind": "tensor-key-format-adaptation",
+        "script": "/root/.local/share/wujie/turbo_transform.py",
+        "notice": "Source hash is for the input file, not the converted output. Origin chain: larryvrh -> t8star -> Wujie format conversion. Redistribution review pending."
+      },
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "h3-native-fl2va",
+      "name": "H3 文生／图生基础模型",
+      "installedPath": "/root/wujie-image/ComfyUI/models/diffusion_models/minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+      "sourceUrl": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/e5eb578a89295337b8ff433a035929ce0279e0b6/diffusion_models/minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+      "sourceRevision": "e5eb578a89295337b8ff433a035929ce0279e0b6",
+      "sourceSha256": "e889202c41dafb67b10d67b97f0d8541508036a6090af23425a5c2615d03c47a",
+      "sourceBytes": 20970379616,
+      "licenseEvidenceIds": [
+        "h3-comfy-repack"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "h3-native-ref2va",
+      "name": "H3 多参／视频编辑基础模型",
+      "installedPath": "/root/wujie-image/ComfyUI/models/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "sourceUrl": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/e5eb578a89295337b8ff433a035929ce0279e0b6/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+      "sourceRevision": "e5eb578a89295337b8ff433a035929ce0279e0b6",
+      "sourceSha256": "9255f52b6677845ad238f20dfaafa94727053694127ab7f255c048f0f9365779",
+      "sourceBytes": 20970379616,
+      "licenseEvidenceIds": [
+        "h3-comfy-repack"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "h3-control-union",
+      "name": "H3 动作控制 Union 补丁",
+      "installedPath": "/root/wujie-image/ComfyUI/models/model_patches/minimax_h3_fun_controlnet_union_pruned_int8_convrot.safetensors",
+      "sourceUrl": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/e5eb578a89295337b8ff433a035929ce0279e0b6/model_patches/minimax_h3_fun_controlnet_union_pruned_int8_convrot.safetensors",
+      "sourceRevision": "e5eb578a89295337b8ff433a035929ce0279e0b6",
+      "sourceSha256": "9c645c0a308c8af361efd43b409710f6f8fec0db297c29503e141a84991fed0c",
+      "sourceBytes": 2296635360,
+      "licenseEvidenceIds": [
+        "h3-comfy-repack"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "h3-fl2va-turbo-lora",
+      "name": "H3 文生／图生 Turbo 8步 v1.0",
+      "installedPath": "/root/wujie-image/ComfyUI/models/loras/minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+      "sourceUrl": "https://huggingface.co/lightx2v/Minimax-h3-Turbo/resolve/62487ee643501626a71502d679f735a23ee6af45/minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors",
+      "sourceRevision": "62487ee643501626a71502d679f735a23ee6af45",
+      "sourceSha256": "2339acdf19bfe123f46b971ea35d367a84adb85de43627e1eceafa5a5b2b111e",
+      "sourceBytes": 1956193000,
+      "licenseEvidenceIds": [
+        "h3-turbo-lightx2v"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "qwen-image-model",
+      "name": "Qwen-Image 2.1 主模型",
+      "installedPath": "/root/wujie-image/ComfyUI/models/diffusion_models/qwen_image_2.1_bf16.safetensors",
+      "sourceUrl": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/9a44dbdb47cefd046be9c0a13476192f34c8db8e/diffusion_models/qwen_image_2.1_bf16.safetensors",
+      "sourceRevision": "9a44dbdb47cefd046be9c0a13476192f34c8db8e",
+      "sourceSha256": "89f4158d066cc33906a199fca85634f766892dd78f49b6698dabf187ac86c4bc",
+      "sourceBytes": 14230280616,
+      "licenseEvidenceIds": [
+        "qwen21-comfy-repack"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "qwen-image-encoder",
+      "name": "Qwen3-VL 8B 图片编码器",
+      "installedPath": "/root/wujie-image/ComfyUI/models/text_encoders/qwen3vl_8b_bf16.safetensors",
+      "sourceUrl": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/9a44dbdb47cefd046be9c0a13476192f34c8db8e/text_encoders/qwen3vl_8b_bf16.safetensors",
+      "sourceRevision": "9a44dbdb47cefd046be9c0a13476192f34c8db8e",
+      "sourceSha256": "68bdc82bc1b66851162ae656225e7e2068166b603db19bd5d5a3b90eb12669a9",
+      "sourceBytes": 17534334616,
+      "licenseEvidenceIds": [
+        "qwen21-comfy-repack"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "qwen-image-vae",
+      "name": "Qwen-Image 2.1 VAE",
+      "installedPath": "/root/wujie-image/ComfyUI/models/vae/qwen_image_2.1_vae_bf16.safetensors",
+      "sourceUrl": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1/resolve/9a44dbdb47cefd046be9c0a13476192f34c8db8e/vae/qwen_image_2.1_vae_bf16.safetensors",
+      "sourceRevision": "9a44dbdb47cefd046be9c0a13476192f34c8db8e",
+      "sourceSha256": "bb21f7473051e1ac368515dd3f2e15cd44d7a11748ee8823e1ddca3e4876b7c9",
+      "sourceBytes": 675509688,
+      "licenseEvidenceIds": [
+        "qwen21-comfy-repack"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "indextts-codec",
+      "name": "IndexTTS 声码器权重",
+      "installedPath": "/root/wujie-image/indextts25/checkpoints/codec.pth",
+      "sourceUrl": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/codec.pth",
+      "sourceRevision": "c39ce5ba981572cb187443877ff559dfb246ce63",
+      "sourceSha256": "d15cbed16a40f478438c961fb043f68dfa6353bf56c966761315db3433e9722c",
+      "sourceBytes": 607290935,
+      "licenseEvidenceIds": [
+        "indextts-model"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "indextts-config",
+      "name": "IndexTTS 模型配置",
+      "installedPath": "/root/wujie-image/indextts25/checkpoints/config.yaml",
+      "sourceUrl": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/config.yaml",
+      "sourceRevision": "c39ce5ba981572cb187443877ff559dfb246ce63",
+      "sourceSha256": "18adf417be3e8f5e2e48e30f7420c719170a6870619436250f360d626877870e",
+      "sourceBytes": 2860,
+      "licenseEvidenceIds": [
+        "indextts-model"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "indextts-feature-1",
+      "name": "IndexTTS 音色特征 1",
+      "installedPath": "/root/wujie-image/indextts25/checkpoints/feat1.pt",
+      "sourceUrl": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/feat1.pt",
+      "sourceRevision": "c39ce5ba981572cb187443877ff559dfb246ce63",
+      "sourceSha256": "f219cb447d80216ba615666da2ff8d63ac544eee26657f3a7b278692bf7a67c4",
+      "sourceBytes": 57170,
+      "licenseEvidenceIds": [
+        "indextts-model"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "indextts-feature-2",
+      "name": "IndexTTS 音色特征 2",
+      "installedPath": "/root/wujie-image/indextts25/checkpoints/feat2.pt",
+      "sourceUrl": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/feat2.pt",
+      "sourceRevision": "c39ce5ba981572cb187443877ff559dfb246ce63",
+      "sourceSha256": "9c4292e96dee535aea9a6206e9a0c856dd578dde9212acdb16dd3ada4d12bf80",
+      "sourceBytes": 374866,
+      "licenseEvidenceIds": [
+        "indextts-model"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "indextts-gpt",
+      "name": "IndexTTS 语音主模型",
+      "installedPath": "/root/wujie-image/indextts25/checkpoints/gpt.pth",
+      "sourceUrl": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/gpt.pth",
+      "sourceRevision": "c39ce5ba981572cb187443877ff559dfb246ce63",
+      "sourceSha256": "43a8f4c30eccdf201958d3b9713511482c19d56dc20b0b1c4ee1e6b080b19d85",
+      "sourceBytes": 3259599833,
+      "licenseEvidenceIds": [
+        "indextts-model"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "indextts-tokenizer",
+      "name": "IndexTTS 多语言词表",
+      "installedPath": "/root/wujie-image/indextts25/checkpoints/multilingual_zh_ja_yue_char_del.tiktoken",
+      "sourceUrl": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/multilingual_zh_ja_yue_char_del.tiktoken",
+      "sourceRevision": "c39ce5ba981572cb187443877ff559dfb246ce63",
+      "sourceSha256": "747979631e813193436aabcff7c1c235d37de8097b71c563ec8b63b7a515c718",
+      "sourceBytes": 907395,
+      "licenseEvidenceIds": [
+        "indextts-model"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "indextts-s2mel",
+      "name": "IndexTTS 语音解码模型",
+      "installedPath": "/root/wujie-image/indextts25/checkpoints/s2mel.pth",
+      "sourceUrl": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/s2mel.pth",
+      "sourceRevision": "c39ce5ba981572cb187443877ff559dfb246ce63",
+      "sourceSha256": "9b1b0003fc189c94cc349758d7ebc25f903b7eb2de4602879959cc64ce816456",
+      "sourceBytes": 414908601,
+      "licenseEvidenceIds": [
+        "indextts-model"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "indextts-stats",
+      "name": "IndexTTS 编码统计",
+      "installedPath": "/root/wujie-image/indextts25/checkpoints/wav2vec2bert_stats.pt",
+      "sourceUrl": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/wav2vec2bert_stats.pt",
+      "sourceRevision": "c39ce5ba981572cb187443877ff559dfb246ce63",
+      "sourceSha256": "c9c176c2b8850ab2e3ba828bbfa969deaf4566ce55db5f2687b8430b87526ad2",
+      "sourceBytes": 9343,
+      "licenseEvidenceIds": [
+        "indextts-model"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "tts-w2v-config",
+      "name": "语音音色编码配置",
+      "installedPath": "/root/wujie-image/indextts25/checkpoints/hf_cache/w2v-bert-2.0/config.json",
+      "sourceUrl": "https://huggingface.co/facebook/w2v-bert-2.0/resolve/da985ba0987f70aaeb84a80f2851cfac8c697a7b/config.json",
+      "sourceRevision": "da985ba0987f70aaeb84a80f2851cfac8c697a7b",
+      "sourceSha256": "f5572bd5998b68182e9c328a43127ed21fed687f6910497136b91a4e3b0e3675",
+      "sourceBytes": 1874,
+      "licenseEvidenceIds": [
+        "w2v-bert"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "tts-w2v-feature",
+      "name": "语音音色特征配置",
+      "installedPath": "/root/wujie-image/indextts25/checkpoints/hf_cache/w2v-bert-2.0/preprocessor_config.json",
+      "sourceUrl": "https://huggingface.co/facebook/w2v-bert-2.0/resolve/da985ba0987f70aaeb84a80f2851cfac8c697a7b/preprocessor_config.json",
+      "sourceRevision": "da985ba0987f70aaeb84a80f2851cfac8c697a7b",
+      "sourceSha256": "8e6281aad64f97e40534135a59dcc5d33571efae376f2a25adf5551951897ab4",
+      "sourceBytes": 275,
+      "licenseEvidenceIds": [
+        "w2v-bert"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "tts-w2v-model",
+      "name": "语音音色编码器",
+      "installedPath": "/root/wujie-image/indextts25/checkpoints/hf_cache/w2v-bert-2.0/model.safetensors",
+      "sourceUrl": "https://huggingface.co/facebook/w2v-bert-2.0/resolve/da985ba0987f70aaeb84a80f2851cfac8c697a7b/model.safetensors",
+      "sourceRevision": "da985ba0987f70aaeb84a80f2851cfac8c697a7b",
+      "sourceSha256": "eb890c9660ed6e3414b6812e27257b8ce5454365d5490d3ad581ea60b93be043",
+      "sourceBytes": 2322063736,
+      "licenseEvidenceIds": [
+        "w2v-bert"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "tts-campplus",
+      "name": "语音说话人特征模型",
+      "installedPath": "/root/wujie-image/indextts25/checkpoints/hf_cache/campplus_cn_common.bin",
+      "sourceUrl": "https://huggingface.co/funasr/campplus/resolve/e4b6ede7ce16997aff4ae69fbca1f0175e2afede/campplus_cn_common.bin",
+      "sourceRevision": "e4b6ede7ce16997aff4ae69fbca1f0175e2afede",
+      "sourceSha256": "3388cf5fd3493c9ac9c69851d8e7a8badcfb4f3dc631020c4961371646d5ada8",
+      "sourceBytes": 28036335,
+      "licenseEvidenceIds": [
+        "campplus"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "tts-bigvgan-config",
+      "name": "语音解码器配置",
+      "installedPath": "/root/wujie-image/indextts25/checkpoints/hf_cache/bigvgan/config.json",
+      "sourceUrl": "https://huggingface.co/nvidia/bigvgan_v2_22khz_80band_256x/resolve/633ff708ed5b74903e86ff1298cf4a98e921c513/config.json",
+      "sourceRevision": "633ff708ed5b74903e86ff1298cf4a98e921c513",
+      "sourceSha256": "88a1f47acf747db0b21e97a389d838566147f7a5464583ff5c8d819d870f03ee",
+      "sourceBytes": 1405,
+      "licenseEvidenceIds": [
+        "bigvgan"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "tts-bigvgan-model",
+      "name": "语音解码器权重",
+      "installedPath": "/root/wujie-image/indextts25/checkpoints/hf_cache/bigvgan/bigvgan_generator.pt",
+      "sourceUrl": "https://huggingface.co/nvidia/bigvgan_v2_22khz_80band_256x/resolve/633ff708ed5b74903e86ff1298cf4a98e921c513/bigvgan_generator.pt",
+      "sourceRevision": "633ff708ed5b74903e86ff1298cf4a98e921c513",
+      "sourceSha256": "e95ba25972d3de0628d99cd156e9315a9c018899bf739988959ebe3544080ced",
+      "sourceBytes": 449228171,
+      "licenseEvidenceIds": [
+        "bigvgan"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": true
+    },
+    {
+      "id": "tts-bigvgan-license",
+      "name": "BigVGAN MIT 许可",
+      "installedPath": "/root/wujie-image/indextts25/checkpoints/hf_cache/bigvgan/LICENSE",
+      "sourceUrl": "https://huggingface.co/nvidia/bigvgan_v2_22khz_80band_256x/resolve/633ff708ed5b74903e86ff1298cf4a98e921c513/LICENSE",
+      "sourceRevision": "633ff708ed5b74903e86ff1298cf4a98e921c513",
+      "sourceSha256": "90459cd52fc41bd723df7c0c76fac1e4dd60e6bfd644a7e2a93f325bed4f6d95",
+      "sourceBytes": 1076,
+      "licenseEvidenceIds": [
+        "bigvgan"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": false
+    },
+    {
+      "id": "tts-default-voice",
+      "name": "IndexTTS 官方示例音色",
+      "installedPath": "/root/wujie-image/indextts25/checkpoints/default-voice.wav",
+      "sourceUrl": "https://huggingface.co/spaces/IndexTeam/IndexTTS-2-Demo/resolve/b01840e8e4fd9753743a6d0466cd73ae1d634a68/examples/voice_01.wav",
+      "sourceRevision": "b01840e8e4fd9753743a6d0466cd73ae1d634a68",
+      "sourceSha256": "e33e6ee0107a1dd58e1d66dd90c13df3d55a8683047cc3d7ea206dad84ed3fc8",
+      "sourceBytes": 478050,
+      "licenseEvidenceIds": [],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": false
+    },
+    {
+      "id": "tts-example-license",
+      "name": "默认音色 Apache-2.0 许可",
+      "installedPath": "/root/wujie-image/indextts25/checkpoints/default-voice-LICENSE",
+      "sourceUrl": "https://huggingface.co/spaces/IndexTeam/IndexTTS-2-Demo/resolve/b01840e8e4fd9753743a6d0466cd73ae1d634a68/LICENSE",
+      "sourceRevision": "b01840e8e4fd9753743a6d0466cd73ae1d634a68",
+      "sourceSha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+      "sourceBytes": 11356,
+      "licenseEvidenceIds": [],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": false
+    },
+    {
+      "id": "tts-model-license",
+      "name": "IndexTTS 模型使用许可",
+      "installedPath": "/root/wujie-image/indextts25/checkpoints/INDEX_MODEL_LICENSE",
+      "sourceUrl": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/LICENSE",
+      "sourceRevision": "c39ce5ba981572cb187443877ff559dfb246ce63",
+      "sourceSha256": "cc7da9ea0f8a97ef15ab3bf0389e636ce79ffca1aef5489520796ac87d87a87b",
+      "sourceBytes": 10553,
+      "licenseEvidenceIds": [
+        "indextts-model"
+      ],
+      "licenseEvidenceNote": "See upstream-sources.json and original license texts; missing text is not permission.",
+      "requiredInPreparedEnvironment": false
+    }
+  ],
+  "purpose": "Expected model locations and attribution; not a live readiness report or redistribution clearance."
+}
