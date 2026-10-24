@@ -118,9 +118,12 @@
         {
           "path": "licenses/dwpose-code/LICENSE",
           "url": "https://raw.githubusercontent.com/IDEA-Research/DWPose/3dca5db79d9f9ffdd378753ddf6ec66535aace88/LICENSE",
-          "sha256": "ec5aa54eef312195c4494873a37158b19b0d523e25cec570189e6aa86289cf42",
-          "bytes": 11996,
-          "role": "license-or-notice"
+          "sha256": "a2c17e75d3ce15802685160587c1fbb83d7d7ffa669d14e1fafa220ceaf2ac7f",
+          "bytes": 11997,
+          "role": "license-or-notice",
+          "originalSourceSha256": "ec5aa54eef312195c4494873a37158b19b0d523e25cec570189e6aa86289cf42",
+          "originalSourceBytes": 11996,
+          "normalization": "GitHub web editor appends one final LF; license text otherwise unchanged. Original source hash retained."
         },
         {
           "url": "https://raw.githubusercontent.com/IDEA-Research/DWPose/3dca5db79d9f9ffdd378753ddf6ec66535aace88/README.md",
@@ -374,9 +377,12 @@
         {
           "path": "licenses/indextts-model/LICENSE",
           "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/LICENSE",
-          "sha256": "cc7da9ea0f8a97ef15ab3bf0389e636ce79ffca1aef5489520796ac87d87a87b",
-          "bytes": 10553,
-          "role": "license-or-notice"
+          "sha256": "53875532237e0a97b17a41721556ff57e93193fc566e48c3a0febe6e35bb5343",
+          "bytes": 10554,
+          "role": "license-or-notice",
+          "originalSourceSha256": "cc7da9ea0f8a97ef15ab3bf0389e636ce79ffca1aef5489520796ac87d87a87b",
+          "originalSourceBytes": 10553,
+          "normalization": "GitHub web editor appends one final LF; license text otherwise unchanged. Original source hash retained."
         },
         {
           "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5/resolve/c39ce5ba981572cb187443877ff559dfb246ce63/README.md",
@@ -401,9 +407,12 @@
         {
           "path": "licenses/bigvgan/LICENSE",
           "url": "https://huggingface.co/nvidia/bigvgan_v2_22khz_80band_256x/resolve/633ff708ed5b74903e86ff1298cf4a98e921c513/LICENSE",
-          "sha256": "90459cd52fc41bd723df7c0c76fac1e4dd60e6bfd644a7e2a93f325bed4f6d95",
-          "bytes": 1076,
-          "role": "license-or-notice"
+          "sha256": "8ad5938dbf67d5d4c4802bbaae7cc9193b8f78c693e1a12cab358d0c17dce152",
+          "bytes": 1077,
+          "role": "license-or-notice",
+          "originalSourceSha256": "90459cd52fc41bd723df7c0c76fac1e4dd60e6bfd644a7e2a93f325bed4f6d95",
+          "originalSourceBytes": 1076,
+          "normalization": "GitHub web editor appends one final LF; license text otherwise unchanged. Original source hash retained."
         },
         {
           "url": "https://huggingface.co/nvidia/bigvgan_v2_22khz_80band_256x/resolve/633ff708ed5b74903e86ff1298cf4a98e921c513/README.md",
