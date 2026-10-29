@@ -1,5 +1,36 @@
 # wujie-autodl · 无界工作台镜像配套
 
+## 2026-10-29 发布候选说明
+
+当前准备的是 **v139-r7 测试候选**，镜像从普通 AutoDL 制作实例保存，再通过 AutoDL Art 发布。不是已完成客户端全流程验收的正式版。
+
+- 自有仓库已安装到系统盘 `/root/wujie-autodl`，`python3 -B /root/wujie-autodl/wujie_autodl.py about` 已运行成功。
+- 环境和辅助资源在 `/root/wujie-image`；其中 `data` 属于系统盘，不是私有数据盘 `/root/autodl-tmp`。
+- 首启材料在 `/root/wujie-image/bootstrap/AutoDL镜像构建候选-v139-r7/`，101 项材料 SHA 已核对。
+- 主 ComfyUI 固定提交 `73c9bad4d21e7addbe1d13bc92eee0f1431b017d`；主环境 Python 3.11.13、PyTorch 2.10.0+cu130，语音及媒体环境为 PyTorch 2.8.0+cu128。
+- 此制作实例目前没有完成 GPU 封存，环境标记缺失；不会写入假标记或把无卡检查称为 GPU 验收。自动首启、新保存镜像的新实例检查及当前无界客户端全流程仍待验证。
+- 私有候选的保存与公开审核状态应以 AutoDL / AutoDL Art 页面为准。本仓库的提交不代表已公开上架。
+
+### v139-r7 候选使用边界
+
+首次 GPU 环境检查入口：
+
+```bash
+/root/wujie-image/python311/python/bin/python3.11 -I -B /root/wujie-image/bootstrap/AutoDL镜像构建候选-v139-r7/first_boot.py
+```
+
+此入口重新校验材料、依赖和 GPU 能力，失败即受阻；不安装依赖、不下载模型、不建立公共模型链接、不提交推理。平台是否自动执行尚未验收，不能省略此事实。完成严格环境检查后，公共库校验、关联和服务启动仍由匹配版本的无界客户端负责。
+
+该候选依赖 Art 只读公共模型挂载，普通 AutoDL 实例不能替代公共库。不得把旧数据盘中的模型或下载缓存当作候选交付内容。IndexTTS、Qwen、H3 的历史后台测试，不等于此新镜像或当前客户端已通过。
+
+`wujie_autodl.py check/start` 是下方 **2026-10-24 旧镜像布局** 的入口，不适用于当前 r7 布局；当前候选不要调用它启动服务。`about` 只展示仓库说明，不证明模型可用。
+
+## 历史记录：2026-10-24 旧布局
+
+以下记录保留来源与使用历史；其中未完成事项、版本、启动路径不能当作当前候选状态。
+
+# wujie-autodl · 无界工作台镜像配套
+
 无界工作台在 AutoDL / AutoDL.Art 上使用的环境检查入口、启动入口与上游来源清单。
 
 **状态：发布准备中。** 本仓库已建立；现有私有候选镜像尚未装入本仓库，也未完成清理后的新实例首次启动验收。仓库创建成功不代表镜像已经公开上架。
@@ -57,3 +88,5 @@ python3 -m unittest discover -s tests -v
 ```
 
 这些检查验证命令行行为，不替代云端新实例首次启动与实际推理验收。
+
+
